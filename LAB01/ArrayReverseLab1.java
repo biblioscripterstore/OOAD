@@ -9,7 +9,7 @@ public class ArrayReverseLab1 {
         for (int i = 0, j = 0, k = array.length - 1; i < array.length / 2; i++, j++, k--) {
             temp = array[j];
             array[j] = array[k];
-            array[k] = first;
+            array[k] = temp;
         }
         printArray(array);
     }
