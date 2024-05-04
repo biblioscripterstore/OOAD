@@ -6,10 +6,10 @@ public class ArrayReverseLab1 {
     public static void reverseArray(int[] array) {
         printArray(array);
         int temp;
-        for (int i = 0, j = 0, k = array.length - 1; i < array.length / 2; i++, j++, k--) {
-            temp = array[j];
-            array[j] = array[k];
-            array[k] = temp;
+        for (int i = 0, j = array.length - 1; i < array.length / 2; i++, j--) {
+            temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
         }
         printArray(array);
     }
